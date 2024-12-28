@@ -1,0 +1,108 @@
+.disabled {
+    pointer-events: none; /* Disable pointer events */
+    opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
+  }
+  .disRow {
+    pointer-events: none;
+    display: none; /* or any other styling to make it appear disabled */
+   
+  }
+
+  .modal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .dropzone {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .dropzone .dz-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropzone .dz-message .fs-3x {
+    margin-right: 10px;
+  }
+  
+  .uploaded-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .uploaded-image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .uploaded-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+
+  .selected {
+    border: 3px solid #007bff;
+  }
+  
+  .fixed-size-image {
+    width: 50%;
+    height: auto;
+  }
+  
